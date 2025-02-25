@@ -1,0 +1,64 @@
+.header {
+  padding: 33px 45px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    flex-basis: 400px;
+  }
+
+  &__navigation {
+    &-list {
+      display: flex;
+      gap: 50px;
+
+      &-item {
+        &-link {
+          color: $color_green_dark;
+          font-weight: 600;
+          transition: color 0.3s;
+
+          &:hover {
+            color: $color_black;
+          }
+        }
+      }
+    }
+  }
+
+  &__btn {
+    width: 137px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: $color_green_light;
+    color: $color_white;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color_black;
+      background-color: $color_white;
+      border: 1px solid $color_black;
+    }
+  }
+
+  &__select {
+    border: none;
+    color: $color_green_dark;
+    font-size: 13px;
+    margin-right: 10px;
+    outline-style: none;
+    cursor: pointer;
+
+    &:last-child {
+      width: 48px;
+      margin-right: 0;
+    }
+  }
+}
